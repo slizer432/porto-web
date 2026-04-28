@@ -7,13 +7,25 @@ function Footer() {
           reserved.
         </p>
         <div className="flex space-x-4 text-gray-400 text-lg">
-          <a href="" className="hover:text-black hover:border-b-2 duration-100">
+          <a
+            href="https://www.linkedin.com/in/rayhan-heru-arifiansyah-037abb289"
+            target="_blank"
+            className="hover:text-black hover:border-b-2 duration-100"
+          >
             LinkedIn
           </a>
-          <a href="" className="hover:text-black hover:border-b-2 duration-100">
+          <a
+            href="https://github.com/slizer432"
+            target="_blank"
+            className="hover:text-black hover:border-b-2 duration-100"
+          >
             Github
           </a>
-          <a href="" className="hover:text-black hover:border-b-2 duration-100">
+          <a
+            href="mailto:rayhanheruk@gmail.com"
+            target="_blank"
+            className="hover:text-black hover:border-b-2 duration-100"
+          >
             E-mail
           </a>
         </div>

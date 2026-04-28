@@ -4,7 +4,7 @@ function Experience() {
       id="experience"
       className="min-h-[80vh] w-full scroll-mt-15 bg-gray-100 overflow-hidden"
     >
-      <div className="mt-45 mx-10">
+      <div className="mt-30 mx-10">
         <h1 className="text-3xl font-semibold">Experience</h1>
         <div className="my-30">
           <hr className="text-gray-300" />

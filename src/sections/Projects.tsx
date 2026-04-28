@@ -14,13 +14,21 @@ const Carousel =
     .default ?? (CarouselModule as unknown as ComponentClass<CarouselProps>);
 
 const projects = [
-  { image: "/Huayra.jpg", title: "Huayra", desc: "Pagani" },
-  { image: "/Huayra.jpg", title: "Huayra", desc: "Pagani" },
-  { image: "/Huayra.jpg", title: "Huayra", desc: "Pagani" },
-  { image: "/Huayra.jpg", title: "Huayra", desc: "Pagani" },
-  { image: "/Huayra.jpg", title: "Huayra", desc: "Pagani" },
-  { image: "/Huayra.jpg", title: "Huayra", desc: "Pagani" },
-  { image: "/Huayra.jpg", title: "Huayra", desc: "Pagani" },
+  {
+    image: "/weather-app.png",
+    title: "Weather App",
+    desc: "A simple React weather application",
+  },
+  {
+    image: "/bus-tracker.png",
+    title: "Bus Tracker",
+    desc: "A full stack bus tracking application",
+  },
+  {
+    image: "/SIMPERA.png",
+    title: "SIMPERA",
+    desc: "College facility report application",
+  },
 ];
 
 const responsive: ResponsiveType = {
@@ -69,7 +77,7 @@ function Projects() {
           </button>
         </div>
       </div>
-      <div className="mt-15 px-8 md:px-14">
+      <div className="mt-15 px-8 md:px-10">
         <Carousel
           ref={(instance) => {
             carouselRef.current = instance as unknown as CarouselHandle | null;

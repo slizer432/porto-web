@@ -23,7 +23,7 @@ function Skills() {
         <ul className="mt-30 mx-20 grid grid-cols-1 gap-15">
           {skillGroups.map((group) => (
             <li key={group.title} className="list-none">
-              <hr className="my-5" />
+              <hr className="my-5 text-gray-300" />
               <div className="grid grid-cols-2 gap-90">
                 <h2 className="text-3xl">{group.title}</h2>
                 <p className="text-lg text-gray-600 justify-end">
