@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
+    "lucide-react": "^1.11.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-multi-carousel": "^2.8.6",
+    "react-scroll": "^1.9.3",
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
