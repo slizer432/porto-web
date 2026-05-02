@@ -2,11 +2,17 @@ interface Props {
   image: string;
   title: string;
   desc: string;
+  onClick?: () => void;
 }
 
-function Card({ image, title, desc }: Props) {
+function Card({ image, title, desc, onClick }: Props) {
   return (
-    <div className="bg-red-200 h-80 w-full relative overflow-hidden rounded-xl">
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={`View ${title} details`}
+      className="bg-red-200 h-80 w-full relative overflow-hidden rounded-xl text-left"
+    >
       <img
         src={image}
         alt="card"
@@ -16,7 +22,7 @@ function Card({ image, title, desc }: Props) {
         <p className="">{desc}</p>
         <h3 className="text-xl font-bold mb-2">{title}</h3>
       </div>
-    </div>
+    </button>
   );
 }
 

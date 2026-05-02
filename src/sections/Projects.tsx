@@ -1,6 +1,6 @@
 import Card from "../components/Card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import type { ComponentClass } from "react";
 import CarouselModule from "react-multi-carousel";
 import type {
@@ -8,6 +8,8 @@ import type {
   ResponsiveType,
 } from "react-multi-carousel/lib/types";
 import "react-multi-carousel/lib/styles.css";
+import CustomModal from "../components/Modal";
+import UseModal from "../hooks/UseModal.ts";
 
 const Carousel =
   (CarouselModule as unknown as { default?: ComponentClass<CarouselProps> })
@@ -18,16 +20,34 @@ const projects = [
     image: "/weather-app.png",
     title: "Weather App",
     desc: "A simple React weather application",
+    category: "Editorial",
+    tech: ["Tailwind CSS", "React", "Vite"],
+    links: {
+      github: "https://github.com/slizer432/weather-app",
+      live: "https://myweatherapptes.netlify.app/",
+    },
   },
   {
     image: "/bus-tracker.png",
     title: "Bus Tracker",
     desc: "A full stack bus tracking application",
+    category: "Productivity",
+    tech: ["Next.js", "Tailwind CSS", "Better Auth", "Vite", "Supabase"],
+    links: {
+      github: "https://github.com/slizer432/bus-tracker-web",
+      // live: "https://github.com/slizer432/bus-tracker",
+    },
   },
   {
     image: "/SIMPERA.png",
     title: "SIMPERA",
     desc: "College facility report application",
+    category: "Web App",
+    tech: ["Laravel", "MySQL"],
+    links: {
+      github: "https://github.com/dulaziz15/SIMPERA",
+      // live: "https://github.com/slizer432/SIMPERA",
+    },
   },
 ];
 
@@ -53,6 +73,20 @@ type CarouselHandle = {
 
 function Projects() {
   const carouselRef = useRef<CarouselHandle | null>(null);
+  const { isOpen, open, close } = UseModal();
+  const [selectedProject, setSelectedProject] = useState<
+    (typeof projects)[number] | null
+  >(null);
+
+  const handleProjectClick = (project: (typeof projects)[number]) => {
+    setSelectedProject(project);
+    open();
+  };
+
+  const handleCloseModal = () => {
+    close();
+    setSelectedProject(null);
+  };
 
   return (
     <section className="min-h-[80vh] scroll-mt-45" id="projects">
@@ -94,10 +128,16 @@ function Projects() {
               image={project.image}
               title={project.title}
               desc={project.desc}
+              onClick={() => handleProjectClick(project)}
             />
           ))}
         </Carousel>
       </div>
+      <CustomModal
+        isOpen={isOpen}
+        onClose={handleCloseModal}
+        project={selectedProject}
+      />
     </section>
   );
 }
