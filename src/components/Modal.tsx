@@ -46,7 +46,7 @@ function CustomModal({
           type="button"
           onClick={onClose}
           aria-label="Close project details"
-          className="absolute right-4 top-4 z-10 rounded-full border border-black/20 bg-white/90 p-2 text-black shadow-sm transition hover:bg-black hover:text-white"
+          className="absolute right-4 top-4 z-10 rounded-full border border-black/20 bg-white/90 p-2 text-black shadow-sm transition hover:bg-black hover:text-white cursor-pointer"
         >
           <X size={16} />
         </button>
@@ -85,12 +85,18 @@ function CustomModal({
           <div className="mt-8 flex flex-wrap gap-4">
             {project?.links.live && (
               <a
-                href={project.links.live}
+                href={
+                  project?.links.live === "https://rayhanherua.netlify.app/"
+                    ? undefined
+                    : project.links.live
+                }
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded border border-slate-300 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-900 transition hover:border-black"
               >
-                View Live
+                {project?.links.live === "https://rayhanherua.netlify.app/"
+                  ? "You are Here"
+                  : "View Live"}
                 <ExternalLink size={14} />
               </a>
             )}

@@ -20,7 +20,7 @@ const projects = [
     image: "/weather-app.png",
     title: "Weather App",
     desc: "A simple React weather application",
-    category: "Editorial",
+    category: "Web App",
     tech: ["Tailwind CSS", "React", "Vite"],
     links: {
       github: "https://github.com/slizer432/weather-app",
@@ -31,7 +31,7 @@ const projects = [
     image: "/bus-tracker.png",
     title: "Bus Tracker",
     desc: "A full stack bus tracking application",
-    category: "Productivity",
+    category: "Web App",
     tech: ["Next.js", "Tailwind CSS", "Better Auth", "Vite", "Supabase"],
     links: {
       github: "https://github.com/slizer432/bus-tracker-web",
@@ -47,6 +47,17 @@ const projects = [
     links: {
       github: "https://github.com/dulaziz15/SIMPERA",
       // live: "https://github.com/slizer432/SIMPERA",
+    },
+  },
+  {
+    image: "/Portfolio.png",
+    title: "Portfolio",
+    desc: "Personal portfolio website",
+    category: "Web App",
+    tech: ["React", "Vite"],
+    links: {
+      github: "https://github.com/slizer432/porto-web",
+      live: "https://rayhanherua.netlify.app/",
     },
   },
 ];

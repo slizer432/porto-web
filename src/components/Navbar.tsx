@@ -1,3 +1,4 @@
+import { Boxes } from "lucide-react";
 import { Link } from "react-scroll";
 
 const navItems = [
@@ -13,7 +14,9 @@ const navOffset = -80;
 function Navbar() {
   return (
     <nav className="max-sm:hidden w-full fixed flex py-4 px-6 border-b border-slate-300 bg-white z-10">
-      <h1 className="font-bold text-xl">Portfolio</h1>
+      <h1 className="font-bold text-xl">
+        <Boxes />
+      </h1>
       <div className="flex justify-center absolute w-full left-0.5">
         <ul className="flex gap-8 text-neutral-400 justify-self-center font-semibold">
           {navItems.map((item) => (
