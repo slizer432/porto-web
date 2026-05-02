@@ -1,11 +1,12 @@
 interface Props {
   image: string;
   title: string;
+  subtitle: string;
   desc: string;
   onClick?: () => void;
 }
 
-function Card({ image, title, desc, onClick }: Props) {
+function Card({ image, title, subtitle, onClick }: Props) {
   return (
     <button
       type="button"
@@ -19,7 +20,7 @@ function Card({ image, title, desc, onClick }: Props) {
         className="w-full h-full object-cover brightness-40 cursor-pointer hover:scale-105 duration-300"
       />
       <div className="absolute bottom-3 left-3 text-white">
-        <p className="">{desc}</p>
+        <p className="">{subtitle}</p>
         <h3 className="text-xl font-bold mb-2">{title}</h3>
       </div>
     </button>

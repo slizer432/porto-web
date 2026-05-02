@@ -19,7 +19,8 @@ const projects = [
   {
     image: "/weather-app.png",
     title: "Weather App",
-    desc: "A simple React weather application",
+    subtitle: "React Weather App",
+    desc: "A simple React weather application I made to practice API integration and React hooks. It allows users to search for current weather conditions in any city worldwide, displaying temperature, humidity, and weather descriptions using data from the WeatherAPI.",
     category: "Web App",
     tech: ["Tailwind CSS", "React", "Vite"],
     links: {
@@ -30,7 +31,8 @@ const projects = [
   {
     image: "/bus-tracker.png",
     title: "Bus Tracker",
-    desc: "A full stack bus tracking application",
+    subtitle: "Full Stack Bus Tracking App",
+    desc: "A full stack bus tracking application built with Next.js, Tailwind CSS, Better Auth, Vite, and Supabase. The app allows users to track bus locations and bus routes.",
     category: "Web App",
     tech: ["Next.js", "Tailwind CSS", "Better Auth", "Vite", "Supabase"],
     links: {
@@ -41,7 +43,8 @@ const projects = [
   {
     image: "/SIMPERA.png",
     title: "SIMPERA",
-    desc: "College facility report application",
+    subtitle: "College Facility Report Application",
+    desc: "SIMPERA is a web application designed to facilitate the reporting of facility issues within a college campus. It allows students and staff to easily submit reports about maintenance problems, such as broken equipment or infrastructure issues, ensuring that the campus facilities are well-maintained and any problems are promptly addressed.",
     category: "Web App",
     tech: ["Laravel", "MySQL"],
     links: {
@@ -52,7 +55,8 @@ const projects = [
   {
     image: "/Portfolio.png",
     title: "Portfolio",
-    desc: "Personal portfolio website",
+    subtitle: "Personal Portfolio Website",
+    desc: "This is my personal portfolio website. Here, you can find information about me, my skills, experience, and the projects I've worked on. The website is built using React and Vite, showcasing my ability to create responsive and visually appealing web applications.",
     category: "Web App",
     tech: ["React", "Vite"],
     links: {
@@ -139,6 +143,7 @@ function Projects() {
               image={project.image}
               title={project.title}
               desc={project.desc}
+              subtitle={project.subtitle}
               onClick={() => handleProjectClick(project)}
             />
           ))}
