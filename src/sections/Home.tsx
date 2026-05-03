@@ -3,7 +3,7 @@ import { ArrowDown } from "lucide-react";
 function Home() {
   return (
     <section
-      className="bg-gray-100 min-h-screen justify-center items-center flex text-center flex-col"
+      className="bg-gray-100 min-h-screen justify-center items-center flex text-center flex-col px-10"
       id="home"
     >
       <h1 className="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>

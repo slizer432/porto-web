@@ -24,7 +24,7 @@ function Footer() {
           <a
             href="mailto:rayhanheruk@gmail.com"
             target="_blank"
-            className="hover:text-black hover:border-b-2 duration-100"
+            className="hover:text-black hover:border-b-2 duration-100 whitespace-nowrap"
           >
             E-mail
           </a>

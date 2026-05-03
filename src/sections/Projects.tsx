@@ -56,7 +56,7 @@ const projects = [
     image: "/Portfolio.png",
     title: "Portfolio",
     subtitle: "Personal Portfolio Website",
-    desc: "This is my personal portfolio website. Here, you can find information about me, my skills, experience, and the projects I've worked on. The website is built using React and Vite, showcasing my ability to create responsive and visually appealing web applications.",
+    desc: "This is my personal portfolio website. Here, you can find information about me, my skills, experience and the projects I've worked on. The website is built using React and Vite, showcasing my ability to create responsive and visually appealing web applications.",
     category: "Web App",
     tech: ["React", "Vite"],
     links: {
