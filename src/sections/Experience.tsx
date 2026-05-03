@@ -2,11 +2,11 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="min-h-[80vh] w-full scroll-mt-15 bg-gray-100 overflow-hidden"
+      className="min-h-[90vh] w-full scroll-mt-15 bg-gray-100 overflow-hidden py-30 px-10"
     >
-      <div className="mt-30 mx-10">
+      <div className="">
         <h1 className="text-4xl font-semibold">Experience</h1>
-        <div className="my-30">
+        <div className="mt-30">
           <hr className="text-gray-300" />
           <div className="my-10 flex lg:gap-90 gap-10 flex-col lg:flex-row">
             <p className="text-sm font-semibold text-gray-700 uppercase whitespace-nowrap">

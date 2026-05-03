@@ -104,8 +104,8 @@ function Projects() {
   };
 
   return (
-    <section className="min-h-[80vh] scroll-mt-45" id="projects">
-      <div className="mt-30 mx-10 flex items-center gap-4 justify-between">
+    <section className="min-h-[90vh] py-30 px-10 scroll-mt-45" id="projects">
+      <div className="flex items-center gap-4 justify-between">
         <h1 className="text-4xl font-semibold">Featured Projects</h1>
         <div className="flex gap-3">
           <button

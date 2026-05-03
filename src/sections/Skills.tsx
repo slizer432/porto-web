@@ -15,7 +15,7 @@ const skillGroups = [
 
 function Skills() {
   return (
-    <section className="min-h-[80vh] bg-gray-100 scroll-mt-15" id="skills">
+    <section className="min-h-[90vh] bg-gray-100 scroll-mt-15" id="skills">
       <div className="flex gap-50 lg:flex-row flex-col py-30">
         <h1 className="text-4xl font-semibold relative top-25 mx-10 self-start whitespace-nowrap lg:sticky">
           Skills & Techs
