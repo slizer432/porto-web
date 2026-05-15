@@ -37,7 +37,7 @@ const projects = [
     tech: ["Next.js", "Tailwind CSS", "Better Auth", "Vite", "Supabase"],
     links: {
       github: "https://github.com/slizer432/bus-tracker-web",
-      // live: "https://github.com/slizer432/bus-tracker",
+      live: "https://bus-tracker-web-cyan.vercel.app/",
     },
   },
   {
